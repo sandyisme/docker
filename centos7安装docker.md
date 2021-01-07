@@ -86,5 +86,26 @@ docker stop 【容器ID或容器名】
 ```shell
 docker rm 【容器ID或容器名】
 ```
+# docker 镜像推送到docker hub并修改
+- 登录docker hub
+```shell
+docker login -u  sandysaidi
+```
+- 输入账号密码后显示如下，表示登录成功
+```shell
+Login Succeeded
+```
+- 修改镜像名
+```shell
+docker centos sandysaidi/centos
+```
+- 将镜像推送到docker hub上
+```shell
+docker push sandysaidi/centos
+```
+- 修改docker hub的镜像
+```shell
+docker commit -m "【提交镜像的备注】" -a "【指定作者名】" sandysaidi/centos
+```
 
 
