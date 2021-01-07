@@ -78,4 +78,13 @@ docker ps -l
 ```shell
 docker start 【容器ID或容器名】
 ```
+- 停止正在运行的容器
+```shell
+docker stop 【容器ID或容器名】
+```
+- 删除容器
+```shell
+docker rm 【容器ID或容器名】
+```
+
 
