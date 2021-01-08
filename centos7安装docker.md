@@ -89,7 +89,7 @@ docker rm 【容器ID或容器名】
 # docker 镜像推送到docker hub并修改
 - 登录docker hub
 ```shell
-docker login -u  sandysaidi
+docker login -u  【docker hub用户名】
 ```
 - 输入账号密码后显示如下，表示登录成功
 ```shell
@@ -97,7 +97,7 @@ Login Succeeded
 ```
 - 修改镜像名
 ```shell
-docker centos sandysaidi/centos
+docker tag centos sandysaidi/centos
 ```
 - 将镜像推送到docker hub上
 ```shell
