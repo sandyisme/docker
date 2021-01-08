@@ -107,5 +107,9 @@ docker push sandysaidi/centos
 ```shell
 docker commit -m "【提交镜像的备注】" -a "【指定作者名】" sandysaidi/centos
 ```
+- 删除镜像
+```shell
+docker rmi centos
+```
 
 
